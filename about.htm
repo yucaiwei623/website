@@ -1,0 +1,443 @@
+<html>
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<title>≠ 余采葳個人網站 ≠</title>
+<SCRIPT language=JavaScript>
+<!--
+////////////////////////////////////////
+//程式來源:韓國           //
+////////////////////////////////////////
+// kazGyoMes22[k]=1;
+// mes22[k]=new Array(); 
+// mes22[k][k]=""; 
+var kazGyoMes22=new Array();
+var mes22=new Array();
+var imRi11=new Array();
+// 1
+kazGyoMes22[0]=0; 
+mes22[0]=new Array();
+mes22[0][0]="OPEN。";
+imRi11[0]=new Image(),imRi11[0].src="預設的圖檔";
+imRi11[1]=new Image(),imRi11[1].src="滑鼠移過的圖檔";
+// 2
+kazGyoMes22[1]=0; 
+mes22[1]=new Array();
+mes22[1][0]="╠═◎ 主頁 ｝歡迎來到余采葳個人網頁═╣";
+imRi11[2]=new Image(),imRi11[2].src="m1.gif";
+imRi11[3]=new Image(),imRi11[3].src="m2.gif";
+// 3
+kazGyoMes22[2]=0; 
+mes22[2]=new Array();
+mes22[2][0]="╠═◎ 關於 ｝余采葳個人資料═╣";
+imRi11[4]=new Image(),imRi11[4].src="m3.gif";
+imRi11[5]=new Image(),imRi11[5].src="m4.gif";
+// 4
+kazGyoMes22[3]=0; 
+mes22[3]=new Array();
+mes22[3][0]="╠═◎ 作品 ｝文青創作═╣";
+imRi11[6]=new Image(),imRi11[6].src="m5.gif";
+imRi11[7]=new Image(),imRi11[7].src="m6.gif";
+// 5
+kazGyoMes22[4]=0; 
+mes22[4]=new Array();
+mes22[4][0]="╠═◎ 留言 ｝凡走過必留下痕跡═╣";
+imRi11[8]=new Image(),imRi11[8].src="m7.gif";
+imRi11[9]=new Image(),imRi11[9].src="m8.gif";
+// 6
+kazGyoMes22[5]=0; 
+mes22[5]=new Array();
+mes22[5][0]="╠═◎ 歷史 ｝心路歷程、精心製作回顧═╣";
+imRi11[10]=new Image(),imRi11[10].src="m9.gif";
+imRi11[11]=new Image(),imRi11[11].src="m10.gif";
+// kazGyoMes22[3]=3;
+// mes22[3]=new Array();
+// mes22[3][0]="";
+// mes22[3][1]="";
+// mes22[3][2]="";
+// mes22[3][3]=""; 
+var foCoMes22="#666666"; 
+var foSiMes22="2"; 
+var ob1BgMes22=""; 
+var speMes22=30; 
+var coMes22=-1,coCutMes22=-1,coGyoMes22=-1;
+var ob0Mes22,ob1Mes22,ob2Mes22;
+var mesLenMes22,mesCutMes22,stMes22,startFlgMes22=false;
+if (("?".length)==1) stMes22=1;
+else stMes22=2;
+function writeMes22(obj,mes) {
+if (document.all || document.getElementById) obj.innerHTML=mes;
+else if (document.layers) {
+obj.document.open();
+obj.document.write(mes);
+obj.document.close();
+}
+}
+function setBgCoMes22(obj,color) {
+if (document.all || document.getElementById) obj.style.backgroundColor=color;
+else if (document.layers) obj.bgColor=color;
+}
+function getMes22(num,gyoNum,cutNum) {
+var s="",i;
+for (i=0;i<gyoNum;i++) {
+s+=(mes22[num][i]+"<BR>");
+}
+s+=mes22[num][gyoNum].substring(0,cutNum);
+return s;
+}
+function scrollMes22() {
+if (startFlgMes22) {
+if (coCutMes22==-1) {
+coGyoMes22=0;
+mesLenMes22=mes22[coMes22][coGyoMes22].length;
+coCutMes22=0;
+}
+else if (coCutMes22<=mesLenMes22) {
+var a;
+if (coCutMes22>=mesLenMes22 && kazGyoMes22[coMes22]==coGyoMes22)
+a="";
+else a="";
+mesCutMes22='<FONT SIZE="'+foSiMes22+'" COLOR="'+foCoMes22+'">'+getMes22(coMes22,coGyoMes22,coCutMes22)+a+'</FONT>';
+writeMes22(ob2Mes22,mesCutMes22);
+coCutMes22+=stMes22;
+}
+else {
+coGyoMes22++;
+if (coGyoMes22<=kazGyoMes22[coMes22]) {
+mesLenMes22=mes22[coMes22][coGyoMes22].length;
+coCutMes22=0;
+} else startFlgMes22=false;
+}
+}
+setTimeout("scrollMes22()",speMes22);
+}
+function scrollStMes22(num) {
+if (document.all || document.getElementById || document.layers) {
+if (num!=coMes22) {
+coCutMes22=-1;
+coMes22=num;
+startFlgMes22=true;
+}
+}
+}
+function prescrollMes22() {
+if (document.all || document.getElementById || document.layers) {
+if (document.all) {
+ob0Mes22=document.all("FrRMes22");
+ob1Mes22=document.all("FrMes22");
+ob2Mes22=document.all("MaMes22");
+}
+else if (document.getElementById) {
+ob0Mes22=document.getElementById("FrRMes22");
+ob1Mes22=document.getElementById("FrMes22");
+ob2Mes22=document.getElementById("MaMes22");
+}
+else if (document.layers) {
+ob0Mes22=document.layers["FrRMes22"];
+ob1Mes22=ob0Mes22.document.layers["FrMes22"];
+ob2Mes22=ob1Mes22.document.layers["MaMes22"];
+}
+if (ob1BgMes22!="") setBgCoMes22(ob1Mes22,ob1BgMes22);
+scrollMes22();
+}
+}
+function gaChaRi11(name,num) {
+if (document.images) document.images[name].src=imRi11[num].src;
+}
+// End -->
+</SCRIPT>
+<SCRIPT src="../../coolbuttons.js"></SCRIPT>
+<STYLE>
+A {
+ TEXT-DECORATION: none
+}
+A:hover {
+ FONT-WEIGHT: bold; COLOR: green
+}
+</STYLE>
+<style>
+<!--
+A{text-decoration:none}
+-->
+</style>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function formHandler(form) {
+var windowprops = "height=500,width=700,location=yes,"
++ "scrollbars=yes,menubars=no,toolbars=no,resizable=yes";
+var URL = form.site.options[form.site.selectedIndex].value;
+popup = window.open(URL,"_self",windowprops);
+}
+// End -->
+</SCRIPT>
+<style type="text/css">
+#showimage{
+position:absolute;
+visibility:hidden;
+border: 1px solid ddbbbb;
+}
+#dragbar{
+cursor: hand;
+cursor: pointer;
+background-color: #ffe5dd;
+min-width: 100px; /*NS6 style to overcome bug*/
+}
+#dragbar #closetext{
+font-weight: bold;
+margin-right: 1px;
+}</style>
+<script type="text/javascript">
+var ie=document.all
+var ns6=document.getElementById&&!document.all
+function ietruebody(){
+return (document.compatMode && document.compatMode!="BackCompat" && !window.opera)? document.documentElement : document.body
+}
+function enlarge(which, e, position, imgwidth, imgheight){
+if (ie||ns6){
+crossobj=document.getElementById? document.getElementById("showimage") : document.all.showimage
+if (position=="center"){
+pgyoffset=ns6? parseInt(pageYOffset) : parseInt(ietruebody().scrollTop)
+horzpos=ns6? pageXOffset+window.innerWidth/2-imgwidth/2 : ietruebody().scrollLeft+ietruebody().clientWidth/2-imgwidth/2
+vertpos=ns6? pgyoffset+window.innerHeight/2-imgheight/2 : pgyoffset+ietruebody().clientHeight/2-imgheight/2
+if (window.opera && window.innerHeight) //compensate for Opera toolbar
+vertpos=pgyoffset+window.innerHeight/2-imgheight/2
+vertpos=Math.max(pgyoffset, vertpos)
+}
+else{
+var horzpos=ns6? pageXOffset+e.clientX : ietruebody().scrollLeft+event.clientX
+var vertpos=ns6? pageYOffset+e.clientY : ietruebody().scrollTop+event.clientY
+}
+crossobj.style.left=horzpos+"px"
+crossobj.style.top=vertpos+"px"
+crossobj.innerHTML='<div align="right" id="dragbar"><span id="closetext" onClick="closepreview()">CLOSE × </span> </div><img src="'+which+'">'
+crossobj.style.visibility="visible"
+return false
+}
+else //if NOT IE 4+ or NS 6+, simply display image in full browser window
+return true
+}
+function closepreview(){
+crossobj.style.visibility="hidden"
+}
+function drag_drop(e){
+if (ie&&dragapproved){
+crossobj.style.left=tempx+event.clientX-offsetx+"px"
+crossobj.style.top=tempy+event.clientY-offsety+"px"
+}
+else if (ns6&&dragapproved){
+crossobj.style.left=tempx+e.clientX-offsetx+"px"
+crossobj.style.top=tempy+e.clientY-offsety+"px"
+}
+return false
+}
+function initializedrag(e){
+if (ie&&event.srcElement.id=="dragbar"||ns6&&e.target.id=="dragbar"){
+offsetx=ie? event.clientX : e.clientX
+offsety=ie? event.clientY : e.clientY
+tempx=parseInt(crossobj.style.left)
+tempy=parseInt(crossobj.style.top)
+dragapproved=true
+document.onmousemove=drag_drop
+}
+}
+document.onmousedown=initializedrag
+document.onmouseup=new Function("dragapproved=false")
+</script>
+<script language="JavaScript">
+<!--
+function YY_Mousetrace(evnt) { //v1.2 copyright (c)2003 http://www.mandy.f4w.net/
+if (yyns4)
+{if (evnt.pageX) {yy_ml=evnt.pageX; yy_mt=evnt.pageY;} }
+else{
+yy_ml=(event.clientX + document.body.scrollLeft);
+yy_mt=(event.clientY + document.body.scrollTop);
+}
+if (yy_tracescript)eval(yy_tracescript)
+}
+function m()
+{
+document.all.cursor.style.left=yy_ml+10
+document.all.cursor.style.top=yy_mt+10
+}
+//-->
+</script> <script language="JavaScript">
+<!--
+var yyns4=window.Event?true:false; var yy_mt = 0; var yy_ml = 0;
+if (yyns4) document.captureEvents(Event.MOUSEMOVE);
+document.onmousemove = YY_Mousetrace;
+yy_tracescript = 'm()';
+//-->
+</script>
+</head>
+<div id="showimage"></div>
+<body onload="setInterval('doClock()',1);doClock=new Function('today=new Date;self.status=today.toString();')">
+<BODY BACKGROUND="bg.gif" bgproperties=fixed>
+<body link="#FFFFFF" vlink="#FFFFFF" alink="#FFFFFF">
+<div id="cursor" style="position:absolute; left:29px; top:237px; z-index:0; visibility: visible">
+	<img SRC="i_s_u_01_10501_01_02.gif"></div>
+<p align="center">
+<table cellSpacing="0" cellPadding="0" width="560" height="991"><tr>
+  <td vAlign="center" align="middle" width="27" height="27">
+ <img src="tb0113.gif" border="0" width="25" height="25"></td>
+  <td vAlign="center" align="left" background="tb0117.gif" width="671" height="27">　</td>
+  <td vAlign="center" align="middle" width="27" height="27">
+ <img src="tb0114.gif" border="0" width="25" height="25"></td></tr><tr>
+    <td vAlign="center" align="middle" background="tb0118.gif" width="27" height="816"></td>
+    <td vAlign="center" align="middle" width="560" bgColor="#ffffff" height="816">
+  <center><font size="2" face="細明體" color="#555555">　<div align="center">
+    <center>
+	<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#FFFFFF" width="101%" id="AutoNumber1" height="815">
+    <tr>
+      <td width="100%" height="99">
+            <DIV 
+            style="border:2px groove; WIDTH: 637px; HEIGHT: 214px">
+            <P align=center>
+   <img border="0" src="02.jpg" width="620" height="196"></P></DIV></TD></TR>
+        <TR>
+          <TD width="100%" height=62>
+            <DIV 
+            style="border:2px groove; WIDTH: 636px; HEIGHT: 54px">
+            <DIV align=center>
+            <CENTER>
+            <TABLE id=AutoNumber1 cellSpacing=0 cellPadding=0 width=632 
+            align=right border=0>
+              <TBODY>
+              <TR>
+                <TD width=532><FONT 
+                  face=Verdana><SPAN class=class1Mes22 id=FrRMes22 
+                  style="POSITION: relative"><SPAN class=class1Mes22 
+                  id=FrMes22><SPAN class=class1Mes22 id=MaMes22>
+				<FONT face=細明體 size=2>〃 歡迎來到余采葳個人網頁 〃</font><FONT face=細明體 color=#555555 size=2>
+                  </FONT>
+                  </SPAN></SPAN></SPAN></TD>
+                <TD width=32><FONT face=細明體 color=#555555 size=2>
+				<A 
+                  onmouseover='scrollStMes22(1),gaChaRi11("menu2",3)' 
+                  onclick='gaChaRi11("menu2",3)' 
+                  onmouseout='gaChaRi11("menu2",2)' 
+                  href="main.htm">
+				<IMG 
+                  style="CURSOR: crosshair" alt="&#9702;° 主 頁 &#9702;°" src="m1.gif" 
+                  border=0 name=menu2></A></FONT></TD>
+                <TD width=31><FONT face=細明體 color=#555555 size=2>
+				<A 
+                  onmouseover='scrollStMes22(2),gaChaRi11("menu3",5)' 
+                  onclick='gaChaRi11("menu3",5)' 
+                  onmouseout='gaChaRi11("menu3",4)' 
+                  href="about.htm">
+				<IMG 
+                  style="CURSOR: crosshair" alt="&#9702;° 關 於 &#9702;°" src="m3.gif" 
+                  border=0 name=menu3></A></FONT></TD>
+                <TD width=33><FONT face=細明體 color=#555555 size=2>
+				<A 
+                  onmouseover='scrollStMes22(3),gaChaRi11("menu4",7)' 
+                  onclick='gaChaRi11("menu4",7)' 
+                  onmouseout='gaChaRi11("menu4",6)' 
+                  href="write.htm">
+				<IMG 
+                  style="CURSOR: crosshair" alt="&#9702;° 作 品 &#9702;°" src="m5.gif" 
+                  border=0 name=menu4></A></FONT></TD>
+                <TD width=30><FONT face=細明體 color=#555555 size=2>
+				<A 
+                  onmouseover='scrollStMes22(4),gaChaRi11("menu5",9)' 
+                  onclick='gaChaRi11("menu5",9)' 
+                  onmouseout='gaChaRi11("menu5",8)' 
+                  href="guest.htm">
+				<IMG 
+                  style="CURSOR: crosshair" alt="&#9702;° 留 言 &#9702;°" src="m7.gif" 
+                  border=0 name=menu5></A></FONT></TD>
+                <TD width=30><FONT face=細明體 color=#555555 size=2>
+				<A 
+                  onmouseover='scrollStMes22(5),gaChaRi11("menu6",11)' 
+                  onclick='gaChaRi11("menu6",11)' 
+                  onmouseout='gaChaRi11("menu6",10)' 
+                  href="history.htm">
+				<IMG 
+                  style="CURSOR: crosshair" alt="&#9702;° 歷 史 &#9702;°" src="m9.gif" 
+                  border=0 name=menu6></A></FONT></TD>
+                <TD width=61>
+                  <DIV align=center>
+					<A 
+                  style="CURSOR: crosshair; TEXT-DECORATION: none" 
+                  onfocus=this.blur() 
+                  onclick="NewWindow(this.href,'test','200','305','yes','center');return false" 
+                  href="m1.htm" 
+                  target=blank>
+     <IMG style="CURSOR: crosshair" src="img_tit_chatmall.gif"  alt="↘ 版權說明 ↙" width="62" height="46"></DIV>
+                  <SCRIPT language=javascript type=text/javascript> 
+<!-- 
+var win=null; 
+function NewWindow(mypage,myname,w,h,scroll,pos){ 
+if(pos=="random"){LeftPosition=(screen.width)?Math.floor(Math.random()*(screen.width-w)):100;TopPosition=(screen.height)?Math.floor(Math.random()*((screen.height-h)-75)):100;} 
+if(pos=="center"){LeftPosition=(screen.width)?(screen.width-w)/2:100;TopPosition=(screen.height)?(screen.height-h)/2:100;} 
+else if((pos!="center" && pos!="random") || pos==null){LeftPosition=0;TopPosition=20} 
+settings='width='+w+',height='+h+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',location=no,directories=no,status=no,menubar=no,toolbar=no,resizable=no'; 
+win=window.open(mypage,myname,settings); 
+if(win.focus){win.focus();}} 
+// --> 
+              </SCRIPT>
+                  </A></TD></TR></TBODY></TABLE></CENTER></DIV></DIV></TD></TR>
+        <TR>
+      <td width="100%" height="900">
+      <div style="width: 635px; height: 900px; border-style: groove; border-width: 2">
+</font><font size="2" face="華康兒風體W4(P)" color="#555555">
+<p align="center">
+<img border="0" src="S__60112904.jpg" width="198" height="256"></P>
+</font><font face="細明體">
+<p class="MsoNormal" style="text-align: justify; text-justify: inter-ideograph; line-height: 18.0pt">
+<font face="華康雅風體W3(P)" size="2">　　我是一位為人開朗親和、樂觀正面、無不良嗜好且好相處的人，我的家庭共有四位成員，家父於臺灣菸酒公司工作，母親則是做家庭代工，哥哥於福華飯店當服務生。本身主修資訊管理方面，於是我在工作上增進新事物的所見與發揮在校的所學，讓我在各方面成長了不少。針對所要應徵的工作乙職，擬列出相關經驗、理念和想法：</font></p>
+<p class="MsoNormal" style="text-align: justify; text-justify: inter-ideograph; line-height: 18.0pt">
+<span lang="EN-US" style="font-family: 華康雅風體W3(P)"><font size="2">一、</font></span><span style="font-family: 華康雅風體W3(P)"><font size="2">擔任社團社長：大學就學期間曾擔任服務性社團的社長，關懷學校的老師和學生並帶領學員參與校外服務性團體的志工。撰寫活動企劃、籌辦活動、擔任輔導員並增加團隊合作的經驗。</font></span></p>
+<p class="MsoNormal" style="text-align: justify; text-justify: inter-ideograph; line-height: 18.0pt">
+<font face="華康雅風體W3(P)"><span lang="EN-US"><font size="2">二、</font></span></font><span style="font-family: 華康雅風體W3(P)"><font size="2">擔任行政人員：辦理學系各項演講和活動，接待外賓及行政業務。學習學校行政流程程序並增加與教師、同仁及學生的溝通協調之經驗。</font></span></p>
+</font><font size="2" face="細明體">
+<p class="MsoNormal" style="text-align: justify; text-justify: inter-ideograph; line-height: 18.0pt">
+<font face="華康雅風體W3(P)">三、</font><font face="華康兒風體W4(P)"><span style="font-family: 華康雅風體W3(P)">工作理念想法：我覺得每個工作都有它的學習和成長。對於工作上虛心學習並積極進取、待人的相處模式樂觀並給予支持和鼓勵，有好的<span lang="EN-US">IQ</span>更要有好的<span lang="EN-US">EQ</span>，這樣別人與自己在工作環境的相處是很自在的。</span></font></p>
+<p class="MsoNormal" style="text-align: justify; text-justify: inter-ideograph; line-height: 18.0pt">
+<span style="font-family: 華康雅風體W3(P)" lang="en-us">　　</span></font><font face="華康兒風體W4(P)" size="2"><font face="華康兒風體W4(P)"><span style="font-family: 華康雅風體W3(P)">工作於
+政理法律事務所擔任助理，從事文書處理、總務事宜、零用金管理、出納會計及至法院遞狀、協助律師作行政等。工作上認真負責、品性端正。商科畢業有會計背景的資歷，取得電腦軟體應用乙級和會計事務丙級證照，工作上培養獨立作業的能力；並藉著工作與同事培養良好的關係，也會在下班後一起吃飯，增加自身的人際關係之外，也從他們身上學習到自己不足的部份增加工作經驗；在工作中我會努力付出也不斷的學習，也安排自己在假日跟家人一起出門逛街和運動，與家人建立良好的溝通關係，讓自己在工作之餘，有更多的機會操練自己、充實自己，期許自己具備各方面的專業能力。</span></font></p>
+</font><font size="2" face="細明體">
+<p class="MsoNormal" style="text-align: justify; text-justify: inter-ideograph; line-height: 18.0pt">
+<span style="font-family: 華康雅風體W3(P)">　　</span><font face="華康兒風體W4(P)"><span style="font-family: 華康雅風體W3(P)">我期望自己未來可以在各項能力上獲得更多的成長！勉勵自己今後能繼續在各領域中不斷的虛心學習、細心積極，讓自己在各方面均衡發展，期待自己成為全方位良好的優秀青年。</span></font></p>
+<p class="MsoNormal" style="text-align: justify; text-justify: inter-ideograph; line-height: 18.0pt">
+　</p></font>
+<font face="華康兒風體W4(P)" color="#555555">
+<p align="center"><font size="2" color="#ff0000">Copyright</font></font><font size="2" face="細明體" color="#FF0000"> 
+&copy; 
+<SCRIPT language=JavaScript>
+<!---
+document.write(y0);
+---></SCRIPT>
+ </font><font size="2" face="華康兒風體W4(P)" color="#FF0000">≠余采葳個人網頁≠</font><font size="2" face="細明體" color="#555555"><font size="2" face="Verdana" color="#ff0000">　</font><script src="http://s21.cnzz.com/stat.php?id=30524&web_id=30524&show=pic" language="JavaScript"></script>
+      </P>
+<p align="center">　</P>
+</div>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+<script language="JavaScript">
+<!-- 
+prescrollMes22();
+// End -->
+    </script>
+    <td vAlign="center" align="middle" background="tb0119.gif" width="27" height="816"></td></tr><tr>
+    <td vAlign="center" align="middle" width="27" height="25">
+ <img src="tb0115.gif" border="0" width="25" height="25"></td>
+    <td vAlign="center" align="right" background="tb0120.gif" width="671" height="25">　</td>
+    <td vAlign="center" align="middle" width="27" height="25">
+ <img src="tb0116.gif" border="0" width="25" height="25"></td></tr>
+</table>
+<SCRIPT language=JavaScript>
+function doClock() {
+window.setTimeout( "doClock()", 1000 );
+today = new Date();
+self.status = today.toString();
+}
+doClock()
+</SCRIPT>
+</body>
+ <body ONDRAGSTART="window.event.returnValue=false" ONCONTEXTMENU="window.event.returnValue=false" onSelectStart="event.returnValue=false">
+</html>

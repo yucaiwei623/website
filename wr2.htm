@@ -1,0 +1,115 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="zh-tw">
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<title>作品</title>
+<!--由這裡開始-->
+<script language="JavaScript1.2">
+<!--
+function changeOpenFunction()
+{
+   var original_window_open = window.open;
+   function new_open_function(url, name, features, replace)
+   {
+      if(name != "TripodPopup")
+         return original_window_open(url, name, features, replace);
+   }
+   window.open = new_open_function;
+}
+var bName = navigator.appName;
+if(bName != "Netscape")
+   changeOpenFunction();
+// -->
+</script>
+<script language="JavaScript">
+<!--
+var date_0=new Array(' &#8224; 短　詞','<font color=#FF0000>→ 那個愛就是你</font>','<br>&nbsp;我想你的每個夜晚<br>&nbsp;多希望每天在你身邊的我<br>&nbsp;喊的名字親吻著你<br>&nbsp;心裡是滿滿的甜蜜<br><br>&nbsp;你愛我的每個早晨<br>&nbsp;好希望擁抱在我身邊的你<br>&nbsp;喊的名字親吻著我<br>&nbsp;心裡卻是滿滿幸福<br><br>&nbsp;想擁有彼此的心<br>&nbsp;在你我心中是那麼的真切<br>&nbsp;永遠在你我烙印的痕跡<br>&nbsp;在記憶深處深深刻劃著<br><br>&nbsp;我們再最初的時刻<br>&nbsp;那個時候青澀年代的我們<br>&nbsp;原以為不會再次認識<br>&nbsp;原來你一直在關注著<br>&nbsp;命運會不會向著我們<br>&nbsp;原來你一直等著我 回頭看看你<br>&nbsp;原來我們錯失很多時刻<br>&nbsp;這個時候轉向彼此的我們<br>&nbsp;原來我一直等著那個心中的愛<br>&nbsp;那個愛就是你啊<br><br>&nbsp;&#9832; 創作時間：20240625');
+var date_1=new Array(' &#8224; 短　詞','<font color=#FF0000>→ 因著愛再次相遇</font>','<br>&nbsp;曾經失落的那個角落<br>&nbsp;曾經失落的那個女孩<br>&nbsp;曾經失落的那個男孩<br>&nbsp;再次因著愛再次相遇<br><br>&nbsp;或許曾輕錯了許多次<br>&nbsp;但是這次不會再錯過<br>&nbsp;抓住這份應許和祝福<br>&nbsp;我們不會再錯過彼此<br><br>&nbsp;快抓緊你 快抓緊我<br>&nbsp;別再讓這份心動溜走<br>&nbsp;快看看我 快看看你<br>&nbsp;別再讓這份感情走散<br>&nbsp;抱擁屬於我們的青春<br><br>&nbsp;那個屬於我們的笑容<br>&nbsp;那份屬於我們的快樂<br>&nbsp;那種屬於我們的心動<br>&nbsp;Dream High My Boy<br>&nbsp;Dream High My Girl<br>&nbsp;Embrace our happiness.<br><br>&nbsp;&#9832; 創作時間：20240606');
+var date_2=new Array(' &#8224; 短　詞','<font color=#FF0000>→ 心 動</font>','<br>&nbsp;想起那一天兩人的旅行<br>&nbsp;一樣的心情 一同的腳步<br>&nbsp;看著夜晚滿滿的星空<br>&nbsp;數著牛郎織女和<br>&nbsp;想起這一天兩人的時光<br>&nbsp;一樣的故事 一同的心跳<br>&nbsp;望著你我雙眼 此刻的世界只有你 只有我<br><br>&nbsp;說起那些日子，說真的還真甜蜜，<br>&nbsp;一起走過的千秋，怎麼能忘記，<br>&nbsp;捨不得的淚水在眼裡打轉，<br>&nbsp;放不掉的感情在心中停留，<br>&nbsp;我的記憶在我腦海中盤旋，<br>&nbsp;Goodbye to Love, best of you....<br><br>&nbsp;如果有一天 回到最初<br>&nbsp;我想再次緊緊的擁抱 不放手<br>&nbsp;如果哪一天 我們再次相遇<br>&nbsp;你會不會有一樣的 心動<br>&nbsp;再對我說 我愛你<br><br>&nbsp;&#9832; 創作時間：20170704');
+// 可隨意增加或減少數量
+
+var date=new Array(date_0,date_1,date_2);
+// 增加或減少數量後需要同時修改 (date_0,date_1,date_2,date_3,date_,date_4,date_5)
+
+function fall(index) {
+fallshow  = '<div id="ltable" style="position:absolute;width:385px;height:110px;z-index:2;background-color:#CCCCCC;border:1px solid #000000;">';
+// 說明視窗顏色及大小
+fallshow += '<table width="100%" border="1" cellspacing="3" cellpadding="0">';
+fallshow += '<tr><td bgcolor="#FFFFFF" width="60"> 類型：</td>';
+fallshow += '<td width="60">' + date[index][0] + '</td>';
+fallshow += '<td bgcolor="#FFFFFF" width="60"> 名稱：</td>';
+fallshow += '<td>' + date[index][1] + '</td></tr></table>';
+fallshow += '<div id="ldetial" style="position:absolute;width:385px;height:110px;z-index:3;left:7px;top:24px;overflow:auto;background-color:#FFFFFF;border:1px solid #000000;">' + date[index][2] + '</div>';
+// 說明視窗背景顏色及大小
+fallshow += '<table width="100%" border="0" cellspacing="0" cellpadding="0"><tr height="111"></tr><tr valign="bottom" align="center" ID="hidewin" STYLE="cursor:hand;" onmouseover="tover(this);" onmouseout="tout(this);" onclick="hidel();"><td>關閉</td></tr></table></div>';
+fallshow += '<div id="lshadow" style="position:absolute;width:400px;height:150px;z-index:1;background-color:#999999;border:1px solid #000000;"></div>';
+// 陰影顏色及大小
+document.body.scroll="no";
+showlayer.innerHTML=fallshow;
+theRealTop=document.body.scrollTop+(document.body.clientHeight-3)/2; // 高度位置
+ltable.style.top=theRealTop;
+lshadow.style.top=theRealTop+8;
+theRealLeft=document.body.scrollLeft+(document.body.clientWidth-450)/2; // 水平位置
+theTrueLeft=theRealLeft;
+ltable.style.left=theTrueLeft;
+lshadow.style.left=theTrueLeft+8;
+}
+
+function hidel() {
+document.body.scroll="Auto";
+showlayer.innerHTML="";
+}
+ 
+function tover(index) {index.style.background="#00FF00";} // highlight 顏色
+function tout(index) {index.style.background="";}
+//-->
+</script>
+<style type='text/css'>
+body, th, td {font:10pt;}
+select, input, checkbox {font:10pt;}
+</style>
+<script language = "JavaScript">
+<!--
+function MakeArray()
+        {
+        this.length = MakeArray.arguments.length
+        for (var i = 0; i < this.length; i++)
+        this[i+1] = MakeArray.arguments[i]
+        }
+var siteopt = new MakeArray("*MENU",
+                            "---Part1",
+                            "---Part2");
+var url = new MakeArray("#",
+                        "wr1.htm",
+                        "wr2.htm");
+function jumpPage(form) {
+        i = form.SelectMenu.selectedIndex;
+        if (i == 0) return;
+        window.location.href = url[i+1];
+}
+-->
+</script>
+</head>
+<body>
+<form>
+<select name="SelectMenu" onChange="jumpPage(this.form)">
+<option>*MENU</option>
+<option>---Part1</option>
+<option>---Part2</option>
+</select></form><p>
+</p>
+<table width="230" border="0" cellspacing="0" cellpadding="0">
+<script language="JavaScript">
+for (var i=0;i<8;i++) {            <!--增加或減少數量後需同時修改 (var i=0;i<?;i++)-->
+   newslist  = '<tr STYLE="cursor:hand;" onMouseOver="tover(this);" onMouseOut="tout(this);" onclick="fall('+i+');">';
+   newslist += '<td height="20" align="right">'+date[i][0]+'</td>';
+   newslist += '<td>'+date[i][1]+'</td></tr>';
+   document.writeln(newslist);
+}
+</script>
+  
+</table>
+<font ID="showlayer"></font>
+</body>
+  <body ONDRAGSTART="window.event.returnValue=false" ONCONTEXTMENU="window.event.returnValue=false" onSelectStart="event.returnValue=false">
+</html>
